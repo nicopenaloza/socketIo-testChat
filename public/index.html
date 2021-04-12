@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="/main.css">
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+                <h1>Testing Socket IO</h1>
+            </nav>
+
+            <center>
+                <div class="header">
+                    <div class="circulos">
+                        <div class="circulo bg-red"></div>
+                        <div class="circulo bg-yellow"></div>
+                        <div class="circulo bg-green"></div>
+                    </div>
+                    
+                    <h3>Porque elegirnos?</h3>
+                </div>
+                <div class="card_container">
+
+                    <div class="col" id="col1">
+
+                        <li>1 <p class="red">&nbsp; Rapido </p></li>
+                        <li>2 <p class="green">&nbsp; Fiable</p></li>
+                        <li>3 <p class="blue">&nbsp; Seguro y Privado</p></li>
+                    </div>
+                    <div class="vertDivider" id="ver"></div>
+                    <div class="horDivider" id="hor"></div>
+                    <div class="col" id="col2">
+                        <li># Tiempos de respuesta cortos</li>
+                        <li># No perdemos datos</li>
+                        <li># No se monitorean los mensajes</li>
+                    </div>
+                </div>
+                <div class="footer"><p>Practice by Nicolas Peñaloza</p></div>
+
+            </center>
+
+        </header>
+
+        <center>
+            <main>
+                
+                <h2>Como instalar socket.io</h2>
+                <div class="parrafo">
+                    <p> Para instalar el paquete Socket.io hay que hacerlo mediante terminal con el gestor de paquetes npm dentro de la carpeta de tu proyecto (Antes habiendo utilizado "npm init -y" en la carpeta)</p>
+                </div>
+
+
+                <div class="commandShow">
+                    <div class="window-header">
+                        <div class="circulos">
+                            <div class="circulo bg-red"></div>
+                            <div class="circulo bg-yellow"></div>
+                            <div class="circulo bg-green"></div>
+                        </div>
+                        <h3 class="window-title">npm</h3>
+                    </div>
+                    <div class="content-card">
+                        <div class="content-bubble">
+                            <li>1<p>&nbsp;</p><p>$ npm install express socket.io</p> </li>
+                        </div>
+                    </div>
+                    <div class="window-footer"><p>Practice by Nicolas Peñaloza</p></div>
+                        
+                    </div>
+                </div>
+
+
+                <h2>Aplicacion de chat simple</h2>
+                <div class="buttonsChat" id= "buttonsChat">
+                    <button class ='botonesIMP' id="nuevaSala" onclick="setUser('newS')"> Crear una nueva sala.</button>
+                    <button class ='botonesIMP' id="unirseSala" onclick="setUser('joinS')"> Unirse a una sala existente.</button>
+                </div>
+
+                <div class="commandShow hidden" id="usernameIn">
+                    <div class="window-header">
+                        <div class="circulos">
+                            <div class="circulo bg-red"></div>
+                            <div class="circulo bg-yellow"></div>
+                            <div class="circulo bg-green"></div>
+                        </div>
+                        <h3 class="window-title">Username</h3>
+                    </div>
+                    
+                    <div class="content-card">
+                        <div class="content-bubble">
+                            <li><input type="text" class="InputData" id="usernameInput">
+                            <button id="usernameButton" onclick="confirmUser()">Siguiente</button></li>
+                        </div>
+                    </div>
+                    <div class="window-footer"><p>Practice by Nicolas Peñaloza</p></div>
+                        
+                    </div>
+                </div>
+
+                <div class="commandShow hidden" id="salaIdInput">
+                    <div class="window-header">
+                        <div class="circulos">
+                            <div class="circulo bg-red"></div>
+                            <div class="circulo bg-yellow"></div>
+                            <div class="circulo bg-green"></div>
+                        </div>
+                        <h3 class="window-title">ID de la sala:</h3>
+                    </div>
+                    
+                    <div class="content-card">
+                        <div class="content-bubble">
+                            <li><input type="text" class="InputData" id="idRoomInput">
+                            <button id="usernameButton" onclick="setIdRoom()">Siguiente</button></li>
+                        </div>
+                    </div>
+                    <div class="window-footer"><p>Practice by Nicolas Peñaloza</p></div>
+                        
+                    </div>
+                </div>
+
+                <div class="nuevoChat hidden" id="nuevoChat">
+ 
+                    <div class="window-header">
+                        <div class="circulos">
+                            <div class="circulo bg-red"></div>
+                            <div class="circulo bg-yellow"></div>
+                            <div class="circulo bg-green"></div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <input type="text" value="1234567891234567" id="salaID" readonly="readonly">
+                        <div class="chatView" id="chatView">
+
+
+
+
+
+                        </div>
+                        <div class="ui">
+                            <input type="text" name="" id="inputMSG">
+                            <button class="" id="buttonMSG" onclick="sendMsg()">Enviar</button>
+                        </div>
+                    </div> 
+                    <div class="window-footer"></div>     
+                </div>
+
+            </main>
+        </center>
+
+        <aside class="aside-left">
+            <h4 id="Refe">Referencias: </h4>
+
+            <div class="colorBg">
+                <div class="text" id ="refs">
+                    <li><a href=""><p>&nbsp; Ventajas</p></a></li>
+                    <li><a href=""><p>&nbsp; Instalacion</p></a></li>
+                    <li><a href=""><p>&nbsp; Ejemplos</p></a></li>
+                </div>
+            </div>
+        </aside>
+        
+        <aside class="aside-right">
+            <div class="bubble">
+                <center>
+                    <div class="flechaArriba"></div>
+                </center>
+            </div>
+        </aside>
+
+
+        <script src="./socket.io/socket.io.js"></script>
+        <script src="./js/chat.js"></script>
+        <script src="./js/enviarMsg.js"></script>
+        <script src="./js/recibirMsg.js"></script>
+    </body>
+
+</html>

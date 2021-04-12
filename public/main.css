@@ -1,0 +1,663 @@
+/* ROOT */
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* TAGS */
+body {
+    background-color: rgb(10, 9, 12);
+    min-width: 460px;
+}
+
+nav {
+    background-color: rgb(13, 14, 15);
+    height: 80px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    min-width: 380px;
+}
+
+nav h1 {
+    color: rgb(187, 187, 187);
+    font-size: 30px;
+} 
+
+header .card_container {
+    background-color: rgba(31, 33, 36, 0.404);
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    max-width: 570px;
+}
+
+header li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 10px;
+    color: rgba(128, 128, 128, 0.493);
+}
+
+header .col {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 5px;
+    background-color: rgba(44, 38, 59, 0.144);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+   
+    width: 45%;
+    min-width: 210px;
+}
+
+header .vertDivider {
+    height: 7rem;
+    width: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(95, 95, 95, 0.425);
+}
+
+header .horDivider {
+    display: none;
+    height: 2px;
+    width: 95%;
+    background-color: rgba(95, 95, 95, 0.425);
+}
+
+header .header {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+
+    background-color: rgb(19, 20, 22);
+
+    height: 27px;
+    width: 50%;
+    max-width: 570px;
+    margin-top: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+header .footer {
+    background-color: rgb(19, 20, 22);
+
+    height: 20px;
+    width: 50%;
+    max-width: 570px;
+    margin-bottom: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    text-align: left;
+
+}
+
+header .footer p {
+    margin-left: 30px;
+    color: rgba(128, 128, 128, 0.493);
+}
+
+header .header h3 {
+    margin-left: 12px;
+}
+
+header {
+    padding-bottom: 15px;
+}
+
+
+
+/* Main content */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 15px;
+    margin-top: 20px;
+
+    width: 90%;
+    height: fit-content;
+    max-width: 900px;
+    list-style: none;
+}
+
+
+main li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+/* Clases */
+.circulos {
+    display: block;
+    margin-left: 20px;
+}
+
+.circulo {
+    background-color: whitesmoke;
+    width: 15px;
+    height: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+
+    border-radius: 50%;
+    float: left;
+}
+
+.circulo:hover {
+    opacity: 0.7;
+}
+
+.content-card {
+    background-color: rgba(31, 33, 36, 0.404);
+    max-width: 570px;
+
+    text-align: left;
+}
+
+.window-title {
+    margin-left: 12px;
+}
+
+.content-card li {
+    color: rgba(128, 128, 128, 0.493);
+    margin-left: 10px;
+}
+
+
+.content-bubble {
+    background-color: rgba(44, 38, 59, 0.144);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.parrafo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.commandShow {
+    width: 75%;
+}
+
+.window-header {
+    background-color: rgba(31, 33, 36, 0.404);
+    
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    height: 27px;
+
+    max-width: 570px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.window-footer {
+    background-color: rgba(31, 33, 36, 0.404);
+
+    height: 20px;
+    width: 100%;
+    max-width: 570px;
+    margin-bottom: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    text-align: left;
+
+}
+
+.window-footer p {
+    margin-left: 30px;
+    color: rgba(128, 128, 128, 0.493);
+}
+
+
+/* Aside */
+
+.aside-left {
+    float: left;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    top: 100px;
+
+    border-radius: 20px;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    width: 200px;
+    text-align: left;
+
+
+    background-color: rgb(13, 14, 15);
+}
+
+
+
+
+.colorBg {
+    background-color: rgba(31, 33, 36, 0.404);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.aside-right{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    float: right;
+
+}
+
+.bubble {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(24, 25, 27);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.445);
+}
+
+.flechaArriba {
+    position: relative;
+    margin-top: 40%;
+
+    border: solid rgb(160, 160, 160);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.bubble:hover {
+    background-color: rgb(30, 32, 34);
+}
+
+
+.bubble:active {
+    background-color: rgb(22, 22, 24);
+}
+
+
+
+/* Botones sala chat */
+.buttonsChat {
+    display: block;
+    margin-top: 20px;
+}
+
+.botonesIMP {
+    border: none;
+    text-decoration: none;
+    outline: inherit;
+	cursor:pointer;
+}
+
+
+/* Nuevo Chat */
+
+.nuevoChat {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 63.5%;
+}
+
+.nuevoChat .content {
+    background-color: rgb(13, 14, 15); 
+
+}
+
+
+
+.InputData {
+    margin-left: 4px;
+    width: 85%;
+    background-color: rgba(31, 33, 36, 0.404);
+    padding-left: 20px;
+
+
+    border: none;
+    text-decoration: none;
+    outline: inherit;
+}
+
+
+
+.chatView {
+    height: 567px;
+    overflow-y: auto;
+}
+
+.ui {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(9, 10, 10); 
+}
+
+
+
+/* Mensajes */
+.msgEnvHolder {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.msgRecHolder {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.mensajeEnviado {
+    position: relative;
+    background-color: rgb(131, 60, 60);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: rgb(207, 207, 207);
+}
+
+.mensajeRecibido {
+    background-color: rgb(194, 194, 194);
+    width: fit-content;
+    padding: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* GLOBAL */
+.hidden {
+    display: none;
+}
+
+.active {
+    display:block;
+}
+
+/* ID STYLE */
+#refs {
+    text-align: left;
+}
+
+p#userName {
+    margin-top: -12px;
+    padding-bottom: 8px;
+    font-size: 13px;
+    margin-right: 20px;
+    float: left;
+}
+
+#nuevaSala {
+    background-color: rgb(110, 155, 65);
+    border-radius: 20px;
+    padding: 30px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+#unirseSala {
+    background-color: rgb(65, 134, 155);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#nuevaSala:hover {
+    opacity: 0.9;
+}
+
+#unirseSala:hover {
+    opacity: 0.9;
+}
+
+#nuevaSala:active {
+    opacity: 1;
+}
+
+#unirseSala:active {
+    opacity: 1;
+}
+
+
+#usernameButton {
+    background-color: rgb(110, 155, 65);
+    height: 2rem;
+    width: 5rem;
+
+    border: none;
+    text-decoration: none;
+    outline: inherit;
+	cursor:pointer;
+}
+
+#inputMSG {
+    height: 2rem;
+    width: 80%;
+    color: black;
+}
+
+#buttonMSG {
+    height: 2.1rem;
+    width: 10%;
+    margin-left: 2px;
+    background-color: rgb(65, 134, 155);
+
+
+
+    border: none;
+    text-decoration: none;
+    outline: inherit;
+	cursor:pointer;
+}
+
+
+#salaID {
+    color: whitesmoke;
+    background-color: rgb(24, 27, 29);
+    text-align: center;
+
+    border: none;
+    text-decoration: none;
+    outline: inherit;
+
+    height: 2.1rem;
+    width: 100%;
+
+}
+
+.msgRecHolder p {
+    color: rgb(36, 36, 36);
+}
+
+
+/* Media querys */
+@media screen and (max-width: 1090px){
+    .aside-left {
+        display: none;
+    }
+    .aside-right{
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 920px) {
+    #ver {
+        display: none;
+    }
+    #hor {
+        display: block;
+    }
+
+    .nuevoChat {
+        margin-right: 10px;
+        margin-left: 10px;
+
+        width: 80%;
+    }
+
+    header .col {
+        width: 95%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #col1 {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    
+    #col2 {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    header .footer p {
+        padding-top: 5px;
+    }
+
+    header .footer {
+        height: 25px;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 920px) {
+    #col1 {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+        
+    }    
+
+    #col2 {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 20px;
+        
+    }
+
+    header .col {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Colors */
+
+.green {
+    color: rgb(125, 189, 29);
+}
+
+.blue {
+    color: rgb(67, 129, 201);
+}
+
+.red {
+    color: rgb(206, 81, 81);
+}
+
+.yellow {
+    color: yellow;
+}
+
+.bg-green {
+    background-color: rgb(125, 189, 29);
+}
+
+.bg-blue {
+    background-color: rgb(67, 129, 201);
+}
+
+.bg-red {
+    background-color: rgb(206, 81, 81);
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
